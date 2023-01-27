@@ -1,0 +1,422 @@
+html {
+    -moz-scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+:target ::before {
+    content: ' ';
+    display: block;
+    height: 10px;
+    margin-top: -10px;
+}
+body {
+    background-color: #464A48;
+    background: linear-gradient(
+    86deg,
+    brown 20%,
+    #464A48 70%
+  );
+  background-blend-mode: normal;
+}
+* {
+    font-family: "arimo";
+}
+header {
+    width: 710px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    float: right;
+    background-color: #464A48;
+    }
+#fondo {
+    width: 710px;
+    display: block;
+}
+.boton_scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: brown;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+  }
+.boton_scroll_on {
+    transform: translateY(0);
+  }
+ /** aca estan todos lo h1- h4**/
+h1 {
+    color: white;
+    font-family:"play";
+    position: relative;
+    justify-content: right;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+h2 {
+    color: white;
+    font-family:"play";
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+h3 {
+    text-shadow: 3px 2px black;
+    color: white;
+    font-family:"play";
+    font-size: 17px;
+    text-align: center;
+}
+h4 {
+    text-shadow: 3px 2px black;
+    color: white;
+    font-family:"play";
+    font-size: 17px;
+    text-align: center;
+}
+/** aca estan todos lo h1- h4**/
+
+/** navegacion y aside */
+aside {
+    width: 250px;
+    height: 3230px;
+    float: left;
+    background-color: #464A48;
+}
+figure {
+    margin: 0;
+}
+.fotocv {
+    position: relative;
+    margin: 20px 15px 20px 17px ;
+    height: 210px;
+    width: 210px;
+    border: 1px solid 464A48;
+    border-radius: 100px;
+}
+nav {
+    margin-top: 0px;
+    display:flex;
+    justify-content: center;
+    position: sticky;
+    top: 50px;
+}
+.boton {
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+ul.boton li {
+    display: inline;
+}
+ul.boton li a {
+    text-decoration:none;
+    display:block;
+    width: 250px;
+    height: 45px;
+    margin-right: -3px;
+    margin-left: -3px;
+    background-color: #464A48;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 10px; 
+}
+ul.boton li a:hover {
+    background-color: brown;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+}
+/** navegacion y aside */
+
+/** clases, articulos y secciones */
+section {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+    background-color: brown;
+}
+article {
+    margin-right: auto;
+    margin-left: auto;
+    width: 710px;
+    float: right;
+}
+.lista_articulo {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-style: normal;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.instituciones {
+    list-style-type: none;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+.cursos {
+    padding: 0px;
+    text-align: center;
+}
+.perfil {
+    font-size: 15px;
+    margin: 0px 15px 15px 15px;
+    text-align: justify;
+    color: white;
+}
+.contactos {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+.contacto_subtitulo {
+    font-weight: bold;
+    color: white;
+}
+.exp_texto {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#exp_lista {
+    text-align: left;
+}
+.columnas {
+    column-width: 200px;
+    column-gap: 15px;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/** clases, articulos y secciones */
+
+/** pie de pagina */
+footer {
+    background-color: brown;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes i {
+    margin-left: 5px;
+    margin-top: 5px;
+    height:20px;
+    width:20px;
+    color: white;
+}
+/** pie de pagina */
+
+@media handheld, screen and (min-width: 600px) and
+(max-width: 967px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        float: none;
+        margin-top: 0;
+        }
+    #fondo {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        margin-top: 0;
+    } 
+    .perfil {
+        text-align: center;
+    } 
+    /** navegacion y aside */
+    aside {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .fotocv {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 20%;
+        display: block;
+    }
+    nav {
+        width: 100%;
+        position: relative;
+        top:0;
+    }
+    ul.boton li a {
+        display: inline-block;
+        width: 11em;
+        height: auto;
+        line-height: auto; 
+    }
+    /** navegacion y aside */
+    
+    /** clases, articulos y secciones */
+    section {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    article {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        float:none;
+    }
+    /** clases, articulos y secciones */
+}
+@media handheld, screen and (max-width:599px) and (min-width:370px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        float: none;
+        margin-top: 0;
+        }
+    #fondo {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        margin-top: 0.2em;
+    }
+    .perfil {
+        text-align: center;
+    }  
+    /** navegacion y aside */
+    aside {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .fotocv {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+        display: block;
+    }
+    nav {
+        width: 100%;
+        position: relative;
+        top:0;
+    }
+    ul.boton li a {
+        display: block;
+        width: 12em;
+        height: auto;
+        line-height: auto; 
+    }
+    /** navegacion y aside */
+    
+    /** clases, articulos y secciones */
+    section {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    article {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        float:none;
+    }
+    /** clases, articulos y secciones */
+}
+
+@media handheld, screen and (max-width:369px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        float: none;
+        margin-top: 0;
+        }
+    #fondo {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+    h2 {
+        margin: 0;
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    .perfil {
+        text-align: center;
+    }  
+    /** navegacion y aside */
+    aside {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .fotocv {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+        display: block;
+    }
+    nav {
+        width: 100%;
+        position: relative;
+        top:0;
+    }
+    ul.boton li a {
+        display: block;
+        width: 12em;
+        height: auto;
+        line-height: auto; 
+    }
+    /** navegacion y aside */
+    
+    /** clases, articulos y secciones */
+    section {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    article {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        float:none;
+    }
+    /** clases, articulos y secciones */
+}
+
